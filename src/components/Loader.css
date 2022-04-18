@@ -1,0 +1,56 @@
+.loaders{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+display:none;
+
+}
+.loaders ul{
+  width: 108px;
+  height: 108px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.loaders ul li{
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  background-color: transparent;
+  animation: loading 0.8s infinite;
+
+}
+
+.loaders ul li:nth-child(5){
+  opacity: 0;
+}
+.loaders ul li:nth-child(1){
+  animation-delay: 0.1s;
+}
+.loaders ul li:nth-child(2){
+  animation-delay: 0.2s;
+}
+.loaders ul li:nth-child(3){
+  animation-delay: 0.3s;
+}
+.loaders ul li:nth-child(6){
+  animation-delay: 0.4s;
+}
+.loaders ul li:nth-child(9){
+  animation-delay: 0.5s;
+}
+.loaders ul li:nth-child(8){
+  animation-delay: 0.6s;
+}
+.loaders ul li:nth-child(7){
+  animation-delay: 0.7s;
+}
+.loaders ul li:nth-child(4){
+  animation-delay: 0.8s;
+}
+@keyframes loading{
+  1%{
+    background-color: #0084e3;
+  }
+}
